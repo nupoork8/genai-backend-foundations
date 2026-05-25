@@ -1,0 +1,11 @@
+Retrieval-Augmented Generation (RAG) is a powerful technique 
+used to optimize the output of Large Language Models. 
+It queries an external knowledge base before generating a response.
+
+By fetching relevant documents first, the model avoids hallucinating fake facts. 
+This makes RAG architecture incredibly valuable for 
+enterprise applications dealing with internal company data.
+
+Vector databases like ChromaDB or FAISS are typically used to 
+store these text chunks as dense mathematical 
+vectors for rapid semantic search pipelines.
