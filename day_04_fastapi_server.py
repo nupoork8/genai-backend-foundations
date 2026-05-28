@@ -1,6 +1,5 @@
 from fastapi import FastAPI
-
-# 1 Initalize Fstapi web engine instance
+# 1 Initialize FastAPI web engine instance
 app = FastAPI(title="GenAI Ingestion Pipeline")
 
 # 2 create basic home endpoint
@@ -16,6 +15,7 @@ def read_root():
 # 3. Create a data endpoint to receive external inputs (POST Request)
 @app.post("/api/v1/query")
 def handle_incoming_query(payload: dict):
+
     #safely extract incoming query text sent by an external application
     user_query = payload.get("query", "")
 
